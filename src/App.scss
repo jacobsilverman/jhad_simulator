@@ -1,0 +1,67 @@
+#root {
+    max-width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .prayer {
+    height: 26em;
+    padding: 1.5em;
+    background-image: url("./assets/Prayer_tab.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .prayer:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  .prayer.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
+  
+  .prayer > div{
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px 60px;
+    grid-template-rows: 4rem 4rem 4rem 4rem 4rem 4rem;
+    :hover {
+      background-color: yellow;
+      opacity: .5;
+    }
+  }
+
+  .jhad {
+    display: flex;
+  }
+
+  .active {
+    background-color: red;
+  }
+  
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+      animation: logo-spin infinite 20s linear;
+    }
+  }
+  
+  .card {
+    padding: 2em;
+  }
+  
+  .read-the-docs {
+    color: #888;
+  }
+  
